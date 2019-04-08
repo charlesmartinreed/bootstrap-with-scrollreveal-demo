@@ -81,9 +81,13 @@
     <section id="testimonial">
       <div class="container">
         <p>
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora
-          deserunt ipsam ex quam doloremque id optio. Mollitia alias,
-          repudiandae."
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur
+          dolorum minima, et vel vitae doloribus sequi asperiores illo eveniet,
+          deserunt hic eaque, eius ut. Delectus labore, cumque esse hic
+          perferendis? Reiciendis sed, eum nihil ullam. Voluptate, at nihil,
+          necessitatibus labore, libero amet assumenda sapiente doloribus quasi
+          molestiae, ullam in molestias nesciunt hic unde. A autem sunt facere
+          eaque recusandae, minus."
         </p>
         <p class="customer">-John Doe</p>
       </div>
@@ -200,5 +204,75 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+
+    <!-- scrollreveal code -->
+    <script>
+      window.sr = ScrollReveal();
+      sr.reveal(".navbar", {
+        duration: 2000,
+        origin: "top",
+        distance: "100px"
+      });
+      sr.reveal(".showcase-left", {
+        duration: 2000,
+        origin: "top",
+        distance: "300px"
+      });
+      sr.reveal(".showcase-right", {
+        duration: 2000,
+        origin: "right",
+        distance: "300px"
+      });
+      sr.reveal(".showcase-btn", {
+        duration: 2000,
+        delay: 2000,
+        origin: "bottom"
+      });
+      sr.reveal("#testimonial div", {
+        duration: 2000,
+        origin: "bottom"
+      });
+      // viewfactor allows us set how much of the element should show before the reveal occurs
+      sr.reveal(".info-left", {
+        duration: 2000,
+        origin: "left",
+        distance: "300px",
+        viewFactor: 0.2
+      });
+      sr.reveal(".info-right", {
+        duration: 2000,
+        origin: "right",
+        distance: "300px",
+        viewFactor: 0.2
+      });
+    </script>
+
+    <!-- smooth scroll behavior jQuery implementation -->
+    <script>
+      $(function() {
+        // Smooth Scrolling
+        $('a[href*="#"]:not([href="#"])').click(function() {
+          if (
+            location.pathname.replace(/^\//, "") ==
+              this.pathname.replace(/^\//, "") &&
+            location.hostname == this.hostname
+          ) {
+            var target = $(this.hash);
+            target = target.length
+              ? target
+              : $("[name=" + this.hash.slice(1) + "]");
+            if (target.length) {
+              $("html, body").animate(
+                {
+                  scrollTop: target.offset().top
+                },
+                1000
+              );
+              return false;
+            }
+          }
+        });
+      });
+    </script>
   </body>
 </html>

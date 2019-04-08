@@ -1,8 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin+Slab|Poppins|Roboto");
 
+* {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
 body {
   margin-top: 70px;
   font-size: 16px;
+  overflow-x: hidden;
 }
 
 h1,
