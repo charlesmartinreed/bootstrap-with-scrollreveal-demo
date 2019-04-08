@@ -22,6 +22,61 @@
   </head>
 
   <body>
+    <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light">
+      <a class="navbar-brand mx-auto" href="#">TechScroll</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a href="#showcase" class="nav-link"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item"><a href="#info1" class="nav-link">About</a></li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="showcase">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <!-- animated from the top -->
+            <div class="showcase-left"><img src="img/image1.jpg" alt="" /></div>
+          </div>
+          <div class="col-sm-6">
+            <div class="showcase-right">
+              <h1>Hands-free help from the Google Assistant</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Dignissimos et suscipit, quibusdam, assumenda nam inventore,
+                dolorem praesentium voluptatem nostrum eligendi nobis culpa!
+                Autem, porro, saepe.
+              </p>
+            </div>
+            <!-- animated seperately from the right showcase -->
+            <a class="btn btn-outline-dark btn-lg showcase-btn mt-2">
+              Read More</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- BOOTSTRAP JS FILES -->
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
